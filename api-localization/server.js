@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const localizacionesRoutes = require("./routes/localizaciones");
 
 const app = express();
-const port = 3000;
+const port = 8001; // Cambia el puerto a 8001
 
 // Middleware
 app.use(bodyParser.json());
@@ -14,7 +14,7 @@ app.use("/localizaciones", localizacionesRoutes);
 
 // Conexión a MongoDB
 mongoose
-  .connect("mongodb://localhost/localizacionDB", {
+  .connect("mongodb://172.31.44.64:27017/localizacionDB", { // Cambia la URL aquí
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
