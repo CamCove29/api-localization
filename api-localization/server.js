@@ -14,7 +14,7 @@ app.use("/localizaciones", localizacionesRoutes);
 
 // Conexión a MongoDB
 mongoose
-  .connect("mongodb://172.31.44.64:27017/localizacionDB", { // Cambia la URL aquí
+  .connect("mongodb://54.162.106.81:27017/localizacionDB", { // Cambia la URL aquí
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
